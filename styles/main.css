@@ -89,7 +89,7 @@ blockquote {
     background: #8A6643;
     position: absolute;
     border-radius: 50%;
-    padding: 2% 7px;
+    padding: 0 7px;
     transform: translate(-20%, -40%);
 }
 .selectbox__input {
@@ -639,7 +639,7 @@ a.button-order-now:hover:before {
 }
 .pricing-carte {
 	float: left;
-	width: 66.6666666667%
+	width: 100% !important;
 }
 }
 
@@ -659,14 +659,19 @@ a.button-order-now:hover:before {
 }
 .pricing-carte .cuisine-detail, .pricing-carte .cuisine-heart {
 	font-family: "Open Sans", sans-serif;
-	font-size: 13px;
-	font-style: italic;
-	margin-top: 10px
+	font-size: 16px;
+	
+
 }
 .pricing-carte .cuisine-heart {
-	color: #111;
-	text-align: center;
-	padding: 10px 0
+	color: #ca0600;
+	text-align: right;
+	padding: 10px 0;
+	width:50%;
+	display: none;
+}
+.d-flex{
+	display: flex;
 }
 .pricing-carte .cuisine-heart i {
 	font-size: 22px;
@@ -677,16 +682,17 @@ a.button-order-now:hover:before {
 	color: #444;
 }
 .pricing-carte .card-left {
-	width: calc(100% - 115px);
+	width: 100%;
 	float: left
+}
+.cuisine-price{
+	width: 50%;
 }
 .pricing-carte .card-right {
 	float: right;
 	width: 75pt
 }
-.pricing-carte, .pricing-table .slimScrollDiv {
-	height: 300px!important
-}
+
 
 @media screen and (min-width:768px) {
 .cuisine-wrapper:nth-of-type(odd) {
@@ -1895,7 +1901,8 @@ opacity:0
 	color: #fff;
 	margin-top: 0;
 	font-weight: 400;
-	font-size: 18px
+	font-size: 18px;
+	margin-bottom: auto;
 }
 .product-detail p {
 	color: #fff;
@@ -2277,9 +2284,7 @@ transform:translateY(0)
 	text-align: left
 }
 }
-footer {
-	text-align: center
-}
+
 footer .upper {
 	background: url(../images/footer-bg.html) center no-repeat;
 	background-size: cover;
@@ -2300,7 +2305,8 @@ footer h3 {
 footer .lower {
 	background-color: #a67c52;
 	width: 100%;
-	text-align: center;
+	
+	
 }
 footer small {
 	color: #fff;
@@ -7011,7 +7017,14 @@ section {
 	background:#000;	
 }
 footer small{
-	font-size:13px;
+	font-size:16px;
+	width: 70%;
+}
+footer .soial-ions {
+    font-size: 30px;
+    width: 30%;
+    margin: auto;
+	text-align: right;
 }
 .footer-nav-wrapper{
 	text-align:left;
@@ -8925,4 +8938,8 @@ a.none-li{
 
 @media screen and (max-width: 1024px){
 
+}
+
+.card-left .cuisine-name{
+	margin-bottom: 20px;
 }
