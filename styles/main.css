@@ -1,7 +1,7 @@
 ﻿body{
 	background:#ede0d9;	
 }
-@charset "UTF-8";
+
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700|Old+Standard+TT:400,700|Great+Vibes|Oswald:400,300,700);
 .banner-section h3, .button-menu, .menu-btn-holder a, .navbar li>a {
 	text-transform: uppercase
@@ -80,6 +80,17 @@ blockquote {
 .selectbox__item:hover {
 	background: #dc8068;
 	color: #fff
+}
+
+.navbar-nav .cartitems{
+    width: 23px;
+    height: 23px;
+    color: white;
+    background: #8A6643;
+    position: absolute;
+    border-radius: 50%;
+    padding: 2% 7px;
+    transform: translate(-20%, -40%);
 }
 .selectbox__input {
 	display: none
@@ -258,7 +269,7 @@ blockquote {
 	-moz-animation: animated-but 1s infinite;
 	-o-animation: animated-but 1s infinite;
 	animation: animated-but 1s infinite;
-	margin-top:34px;
+	margin-top:25px;
 	border-radius: 10px;
 	margin-left: 15px;
 }
@@ -278,6 +289,10 @@ blockquote {
 	color: #fff!important
 }
 
+.button-order-now span{
+	margin-left: 10px;
+}
+
 @media screen and (min-width:992px) {
 .button-order-now {
 	max-width:auto;
@@ -285,26 +300,10 @@ blockquote {
 }
 .button-order-now a{
 	text-align: center;
-	padding:0 35px 0 0 !important;
+	padding:0 !important;
 	display: inline-block;
 }
-.button-order-now:before {
-	position: absolute;
-	top: 10px;
-	left:45px;
-	display: inline-block;
-	font: normal normal normal 14px/1 FontAwesome;
-	text-rendering: auto;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	width: 100%;
-	font-size: 22px;
-	color: #fff;
-	text-align: center;
-	content: "";
-	-webkit-transition: top .4s ease-in-out;
-	transition: top .4s ease-in-out
-}
+
 a.button-order-now:hover:before {
 	top: 15px
 }
