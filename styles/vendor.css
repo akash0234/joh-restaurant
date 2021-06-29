@@ -7382,10 +7382,7 @@ filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
 .mfp-ajax-cur {
 	cursor: progress
 }
-.mfp-zoom-out-cur, .mfp-zoom-out-cur .mfp-image-holder .mfp-close {
-	cursor: -webkit-zoom-out;
-	cursor: zoom-out
-}
+
 .mfp-zoom {
 	cursor: pointer;
 	cursor: -webkit-zoom-in;

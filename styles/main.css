@@ -9,9 +9,9 @@
 .gallery-type-one, .submenu, .tag-line ul {
 	list-style-type: none
 }
-.owl-page, .selectbox__item, a {
+/* .owl-page, .selectbox__item, a {
 	cursor: pointer
-}
+} */
 a:focus {
 	color: inherit
 }
@@ -446,7 +446,7 @@ a.button-order-now:hover:before {
 }
 }
 .fa-shopping-cart {
-	font-size: 20px;
+	font-size: 18px;
 	vertical-align: text-bottom;
 	position: relative
 }
