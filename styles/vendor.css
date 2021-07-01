@@ -999,11 +999,11 @@ button, input, select, textarea {
 	line-height: inherit
 }
 a {
-	color: #337ab7;
+	
 	text-decoration: none
 }
 a:focus, a:hover {
-	color: #23527c;
+	
 	text-decoration: none
 }
 a:focus {
@@ -3450,7 +3450,7 @@ filter:progid:DXImageTransform.Microsoft.gradient(enabled=false);
 .navbar-nav>li>a {
 	padding-top: 10px;
 	padding-bottom: 10px;
-	line-height: 24px
+	line-height: 20px
 }
 
 @media (max-width:991px) {
