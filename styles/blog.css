@@ -245,3 +245,7 @@ button.goBtn {
 .blog_section .input-group-btn{
   font-size: 18px !important;
 }
+.inner-bl h6{
+  font-size: 18px;
+  font-weight: bold;
+}
