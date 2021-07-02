@@ -48,10 +48,10 @@
     content: '';
     width: 12px;
     height: 12px;
-    background: #F87DA9;
+    background: #ff4243;
     position: absolute;
     top: 20%;
-    left: 6%;
+    left:15%;
     border-radius: 100%;
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
@@ -63,9 +63,10 @@
 }
 [type="radio"]:checked + label:after {
     opacity: 1;
-    -webkit-transform: scale(1);
-    transform: scale(1);
+    -webkit-transform: scale(1) ;
+    transform: scale(1) ;
 }
+
     </style>
    
 </head>
@@ -236,19 +237,22 @@
                                     <div class="cart-bot-last mt-2">
                                         <h2>Select an option</h2>
                                     </div>
-                                    <form action="#">
-                                        <p>
+                                    <form action="#" class="d-flex">
+                                        <div class="d-flex mr-3">
                                           <input type="radio" id="test1" name="radio-group" checked>
-                                          <label for="test1">Delivery</label>
-                                        </p>
-                                        <p>
+                                          <label for="test1"></label>
+                                          <h4 class=" ml-1">Delivery</h4>
+                                        </div>
+                                        <div class="d-flex mr-3">
                                           <input type="radio" id="test2" name="radio-group">
-                                          <label for="test2">Take Away</label>
-                                        </p>
-                                        <p>
+                                          <label for="test2"></label>
+                                          <h4  class=" ml-1">Take Away</h4>
+                                        </div>
+                                        <div class="d-flex mr-3"> 
                                           <input type="radio" id="test3" name="radio-group">
-                                          <label for="test3">Pickup</label>
-                                        </p>
+                                          <label for="test3"></label>
+                                          <h4  class=" ml-1">Pickup</h4>
+                                        </div>
                                       </form>
                                 </div>
                                 <div class="col-md-5 col-sm-6 ">
