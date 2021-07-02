@@ -316,7 +316,7 @@
                         </div>
                         
                         
-                        <div class="col-md-6">
+                        <div class="col-md-6" id="billbl">
                         	<div class="billing-det-hldr">
                         		<h3>Billing details</h3>
 
@@ -745,6 +745,8 @@
   $(function () {
       $('#a').change(function () {
           $('#shiplbl').toggle(!this.checked);
+
+         
       }).change(); //ensure visible state matches initially
   });
 </script>

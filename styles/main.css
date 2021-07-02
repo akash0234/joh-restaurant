@@ -9042,7 +9042,18 @@ ul.tabs li.current{
 	font-style: italic;
 	text-transform: none;
 	font-size: 14px;
+	width: 80%;
 }
+#all h6{
+	
+		font-size: 22px;
+		color: white;
+		padding: 10px 15px;
+		background: #944743;
+		margin: 0;
+	
+}
+#all .list-group {margin-bottom: 0;}
 
 #menu .badge {
 	border-radius: 0;
