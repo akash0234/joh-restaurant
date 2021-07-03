@@ -8973,7 +8973,7 @@ ul.tabs li.current{
 }
 
 #menu .nav-pills {
-	background-color: #182c39;
+	background-color: #000;
 	border-color: transparent;
 	font-weight: 500;
 	color: #000;
@@ -8996,17 +8996,17 @@ ul.tabs li.current{
 
 #menu .nav-pills>li.active>a,#menu .nav-pills>li.active>a:focus,#menu .nav-pills>li.active>a:hover {
     color: #fff;
-    background-color: #944743;
+    background-color: #a67c52;
 }
 #menu .nav-pills > li > a:hover,
 #menu .nav-pills > li > a:focus:hover {
 	color: #fff;
-	background-color: #944743;
+	background-color: #a67c52;
 }
 
 #menu .nav-pills > li > a.active,
 #menu .nav-pills > li  > a.active:focus {
-	background-color: #944743;
+	background-color: #a67c52;
 	color: #fff;
 }
 
@@ -9062,7 +9062,7 @@ ul.tabs li.current{
 		font-size: 22px;
 		color: white;
 		padding: 10px 15px;
-		background: #944743;
+		background: #a67c52;
 		margin: 0;
 	
 }
@@ -9070,12 +9070,13 @@ ul.tabs li.current{
 
 #menu .badge {
 	border-radius: 0;
-	background-color: #444;
-	font-size: 12px;
+	background-color: #000;
+	font-size: 14px;
 	color: #fff;
 	position: absolute;
 	right: 0;
-	top: 0;
+	top: 5px;
+	padding: 6px;
 }
 
 
@@ -9104,4 +9105,12 @@ ul.tabs li.current{
 	transition: 0.5s;
 	color: #a67c52;
 	
+}
+@media (max-width:767px){
+	.lower .d-flex{
+		flex-direction: column;
+	}
+	.lower .d-flex small{
+		margin: auto;
+	}
 }
