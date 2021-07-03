@@ -770,6 +770,13 @@ a.button-order-now:hover:before {
 }
 
 @media screen and (max-width:767px) {
+	.nav-pills>li {
+    
+		width: 100%;
+	}
+	.bg-menu {
+		margin: auto 30px !important;
+	}
 .pricing-table {
 	margin: 0
 }
@@ -8970,8 +8977,10 @@ ul.tabs li.current{
 	border-color: transparent;
 	font-weight: 500;
 	color: #000;
-	margin: 25px;
+	margin: 20px auto;
 }
+
+
 
 #menu .nav-pills > li > a,
 #menu .nav-pills > li > a:focus {
@@ -8985,6 +8994,10 @@ ul.tabs li.current{
 
 }
 
+#menu .nav-pills>li.active>a,#menu .nav-pills>li.active>a:focus,#menu .nav-pills>li.active>a:hover {
+    color: #fff;
+    background-color: #944743;
+}
 #menu .nav-pills > li > a:hover,
 #menu .nav-pills > li > a:focus:hover {
 	color: #fff;
@@ -9062,6 +9075,7 @@ ul.tabs li.current{
 	color: #fff;
 	position: absolute;
 	right: 0;
+	top: 0;
 }
 
 
