@@ -9072,3 +9072,22 @@ ul.tabs li.current{
 	padding: 10px;
 	text-transform: none;
 }
+
+
+
+
+
+
+
+
+
+
+.cuisine-price a{
+	color:#000;
+
+}
+.cuisine-price a:hover{
+	transition: 0.5s;
+	color: #a67c52;
+	
+}
