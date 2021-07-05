@@ -9123,9 +9123,17 @@ ul.tabs li.current{
 		margin: auto;
 	}
 }
+
 @media (max-width:425px){
 	.pricing-carte .cuisine-name, .pricing-carte .cuisine-price {
 		font-family: "Old Standard TT", serif;
 		font-size: 21px;
 	}
 }
+
+@media only screen and (max-width: 340px){
+a.button-order-now2 {
+    left: -12% !important;
+}
+}
+
