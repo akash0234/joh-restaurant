@@ -9114,3 +9114,8 @@ ul.tabs li.current{
 		margin: auto;
 	}
 }
+@media only screen and (max-width: 340px){
+a.button-order-now2 {
+    left: -12% !important;
+}
+}
