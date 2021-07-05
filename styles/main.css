@@ -9137,3 +9137,40 @@ a.button-order-now2 {
 }
 }
 
+
+
+
+
+
+
+
+
+@media (max-width:767px){
+.contact-email a i{
+	line-height: 50px !important;
+}
+.addressbar .marker h4, .addressbar .support-mail h4 {
+    font-family: "Old Standard TT", serif;
+    font-size: 15px;
+    line-height: 26px;
+    color: #664d42;
+    font-weight: 600;
+    word-break: break-word;
+}
+.addressbar, .addressbar .marker .cont, .addressbar .marker a, .addressbar .support-mail .cont, .addressbar .support-mail a {
+   padding: 0;
+}
+.contactpage h2 {
+    font-family: "Old Standard TT", serif;
+    font-size: 26px;
+    color: #7E5B39;
+}
+.contactpage .cont-wrap {
+    margin: 25px 0;
+}
+.headingcontact {
+    font-size: 32px;
+    color: #664d42;
+    text-transform: capitalize;
+}
+}
