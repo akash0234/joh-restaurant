@@ -1279,9 +1279,7 @@ a.button-order-now:hover:before {
 	border: 1px dashed #000;
 	display: inline-block
 }
-.coupon img {
-	display: none
-}
+
 .coupon span {
 	display: block;
 	color: #3f3530;
@@ -8790,17 +8788,28 @@ a.none-li{
     height: 42px;
     margin-top: 22px;
 }
-.button-menu{
+@media (max-width:767px){
+	.button-menu{
 	    transform: rotate(-90deg);
     height: 39px;
     line-height: initial;
     padding: 12px 19px;
     width: auto;
-    right: -23px;
+    right: -38px;
     top: 45%;
     border: 0 !important;
     border-radius: 5px 5px 0 0;
 }
+.button-order-now2{
+	display:none !important;
+}
+}
+@media (min-width:768px){
+	.button-menu{
+	   display: none;
+}
+}
+
 .navbar-default .navbar-toggle .icon-bar{
 	    background-color: #fff;
 }
@@ -9112,5 +9121,11 @@ ul.tabs li.current{
 	}
 	.lower .d-flex small{
 		margin: auto;
+	}
+}
+@media (max-width:425px){
+	.pricing-carte .cuisine-name, .pricing-carte .cuisine-price {
+		font-family: "Old Standard TT", serif;
+		font-size: 21px;
 	}
 }
