@@ -9032,6 +9032,7 @@ ul.tabs li.current{
 	border: none;
 	border-bottom: 1px solid #555;
 	padding: 0 auto;
+	height: 125px;
 }
 
 #menu .tab-content  .tab-pane  h3 {
@@ -9082,10 +9083,13 @@ ul.tabs li.current{
 	background-color: #000;
 	font-size: 14px;
 	color: #fff;
-	top: 5px;
+
 	padding: 6px 15px 6px 6px;
 	margin: 0 3px;
-	float: right !important;
+	top: 10%;
+    right: 0;
+	position: absolute;
+
 }
 #menu .badge1 {
 	border-radius: 0;
