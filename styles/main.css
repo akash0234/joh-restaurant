@@ -9054,7 +9054,7 @@ ul.tabs li.current{
 	color: #182c39;
 	text-transform: none;
 	font-size: 18px;
-	width: 80%;
+	width: 100%;
 }
 
 #menu .list-group-item  p {
@@ -9082,10 +9082,20 @@ ul.tabs li.current{
 	background-color: #000;
 	font-size: 14px;
 	color: #fff;
-	position: absolute;
-	right: 0;
+	top: 5px;
+	padding: 6px 15px 6px 6px;
+	margin: 0 3px;
+	float: right !important;
+}
+#menu .badge1 {
+	border-radius: 0;
+	background-color: #000;
+	font-size: 14px;
+	color: #fff;
 	top: 5px;
 	padding: 6px;
+	margin: 0 3px;
+	float: right !important;
 }
 
 
