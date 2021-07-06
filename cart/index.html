@@ -16,57 +16,77 @@
     <link rel="stylesheet" href="../styles/main.css" />
     <script src="../scripts/vendor/modernizr.js"></script>
     <style>
-        [type="radio"]:checked,
-[type="radio"]:not(:checked) {
-    position: absolute;
-    left: -9999px;
-}
-[type="radio"]:checked + label,
-[type="radio"]:not(:checked) + label
-{
-    position: relative;
-    padding-left: 28px;
-    cursor: pointer;
-    line-height: 20px;
-    display: inline-block;
-    color: #666;
-}
-[type="radio"]:checked + label:before,
-[type="radio"]:not(:checked) + label:before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 20px;
-    height: 20px;
-    border: 1px solid #ddd;
-    border-radius: 100%;
-    background: #fff;
-}
-[type="radio"]:checked + label:after,
-[type="radio"]:not(:checked) + label:after {
-    content: '';
-    width: 12px;
-    height: 12px;
-    background: #ff4243;
-    position: absolute;
-    top: 20%;
-    left:15%;
-    border-radius: 100%;
-    -webkit-transition: all 0.2s ease;
-    transition: all 0.2s ease;
-}
-[type="radio"]:not(:checked) + label:after {
-    opacity: 0;
-    -webkit-transform: scale(0);
-    transform: scale(0);
-}
-[type="radio"]:checked + label:after {
-    opacity: 1;
-    -webkit-transform: scale(1) ;
-    transform: scale(1) ;
+        .radiocheck{
+            height:225px;
+        }
+
+label {
+  width: 200px;
+  border-radius: 3px;
+  border: 1px solid #D1D3D4
 }
 
+/* hide input */
+input.radio:empty {
+	margin-left: -999px;
+    display: none;
+}
+
+/* style label */
+input.radio:empty ~ label {
+	position: relative;
+	float: left;
+	line-height: 2.5em;
+	text-indent: 3.25em;
+	margin-top: 2em;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+    margin-right: 10px;
+}
+
+input.radio:empty ~ label:before {
+	position: absolute;
+	display: block;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	content: '';
+	width: 2.5em;
+	background: #D1D3D4;
+	border-radius: 3px 0 0 3px;
+}
+
+/* toggle hover */
+input.radio:hover:not(:checked) ~ label:before {
+	content:'\2714';
+	text-indent: .9em;
+	color: #C2C2C2;
+}
+
+input.radio:hover:not(:checked) ~ label {
+	color: #888;
+}
+
+/* toggle on */
+input.radio:checked ~ label:before {
+    content: '\2714';
+    text-indent: .9em;
+    color: #fff;
+    background-color: #000000;
+}
+
+input.radio:checked ~ label {
+    color: white;
+    background: #a67c52;
+}
+
+/* radio focus */
+input.radio:focus ~ label:before {
+	box-shadow: 0 0 0 3px #999;
+}
     </style>
    
 </head>
@@ -236,23 +256,25 @@
                                     <div class="cart-bot-last mt-2">
                                         <h2>Select an option</h2>
                                     </div>
-                                    <form action="#" class="d-flex">
-                                        <div class="d-flex mr-3">
-                                          <input type="radio" id="test1" name="radio-group" checked>
-                                          <label for="test1"></label>
-                                          <h4 class=" ml-1">Delivery</h4>
-                                        </div>
-                                        <div class="d-flex mr-3">
-                                          <input type="radio" id="test2" name="radio-group">
-                                          <label for="test2"></label>
-                                          <h4  class=" ml-1">Take Away</h4>
-                                        </div>
-                                        <div class="d-flex mr-3"> 
-                                          <input type="radio" id="test3" name="radio-group">
-                                          <label for="test3"></label>
-                                          <h4  class=" ml-1">Dine-in</h4>
-                                        </div>
-                                      </form>
+                                    <div class="radiocheck">
+                                        <div >
+                                            <input type="radio" name="radio" id="radio1" class="radio" checked/>
+                                            <label for="radio1">Delivery</label>
+                                            </div>
+                                            
+                                            <div>
+                                            <input type="radio" name="radio" id="radio2" class="radio"/>
+                                            <label for="radio2">Take away</label>
+                                            </div>
+                                            
+                                            <div>	
+                                            <input type="radio" name="radio" id="radio3" class="radio"/>
+                                            <label for="radio3">Pick up</label>
+                                            </div>
+                                            
+                                        
+                                    </div>
+                                   
                                 </div>
                                 <div class="col-md-5 col-sm-6 ">
                                     <div class="cart-bot-last mt-2">
