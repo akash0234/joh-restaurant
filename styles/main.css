@@ -775,7 +775,7 @@ a.button-order-now:hover:before {
 		width: 100%;
 	}
 	.bg-menu {
-		margin: auto 30px !important;
+		margin: auto 15px !important;
 	}
 .pricing-table {
 	margin: 0
@@ -8899,6 +8899,12 @@ a.none-li{
 	.ban-hldr .bannner-lft{
 		padding: 10px 0 0;
 	}
+	#menu .list-group-item {
+		height: auto;
+	}
+		.FINAL-TOUCHES .list-group-item {
+		height: 125px !important;
+	}
 
 }
 
@@ -9032,7 +9038,7 @@ ul.tabs li.current{
 	border: none;
 	border-bottom: 1px solid #555;
 	padding: 0 auto;
-	height: 125px;
+	min-height: 125px;
 }
 
 #menu .tab-content  .tab-pane  h3 {
@@ -9065,7 +9071,7 @@ ul.tabs li.current{
 	font-style: italic;
 	text-transform: none;
 	font-size: 14px;
-	width: 80%;
+	width: 65%;
 }
 #all h6{
 	
@@ -9186,5 +9192,8 @@ a.button-order-now2 {
     font-size: 32px;
     color: #664d42;
     text-transform: capitalize;
+}
+#menu .list-group-item h4 {
+    width: 70%;
 }
 }

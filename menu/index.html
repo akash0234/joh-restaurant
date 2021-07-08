@@ -16,97 +16,97 @@
     <link rel="stylesheet" href="../styles/vendor.css" />
     <link rel="stylesheet" href="../styles/main.css" />
     <script src="../scripts/vendor/modernizr.js"></script>
-   
-      <style>
-        .qty-input {
-	 color: #000;
-	 background: #fff;
-	 display: flex;
-	 align-items: center;
-	 overflow: hidden;
+    <style>
+      .qty-input {
+ color: #000;
+ background: #fff;
+ display: flex;
+ align-items: center;
+ overflow: hidden;
 }
- .qty-input .product-qty, .qty-input .qty-count {
-	 background: transparent;
-	 color: inherit;
-	 font-weight: bold;
-	 font-size: inherit;
-	 border: none;
-	 display: inline-block;
-	 min-width: 0;
-	 height:25px;
-	 line-height: 1;
+.qty-input .product-qty, .qty-input .qty-count {
+ background: transparent;
+ color: inherit;
+ font-weight: bold;
+ font-size: inherit;
+ border: none;
+ display: inline-block;
+ min-width: 0;
+ height:25px;
+ line-height: 1;
 }
- .qty-input .product-qty:focus, .qty-input .qty-count:focus {
-	 outline: none;
+.qty-input .product-qty:focus, .qty-input .qty-count:focus {
+ outline: none;
 }
- .qty-input .product-qty {
-	 width: 30px;
-	 min-width: 0;
-	 display: inline-block;
-	 text-align: center;
-	 appearance: textfield;
+.qty-input .product-qty {
+ width: 30px;
+ min-width: 0;
+ display: inline-block;
+ text-align: center;
+ appearance: textfield;
 }
- .qty-input .product-qty::-webkit-outer-spin-button, .qty-input .product-qty::-webkit-inner-spin-button {
-	 appearance: none;
-	 margin: 0;
+.qty-input .product-qty::-webkit-outer-spin-button, .qty-input .product-qty::-webkit-inner-spin-button {
+ appearance: none;
+ margin: 0;
 }
- .qty-input .qty-count {
-	 padding: 0;
-	 cursor: pointer;
-	 width: 25px;
-	 font-size: 1.25em;
-	 text-indent: -100px;
-	 overflow: hidden;
-	 position: relative;
+.qty-input .qty-count {
+ padding: 0;
+ cursor: pointer;
+ width: 25px;
+ font-size: 1.25em;
+ text-indent: -100px;
+ overflow: hidden;
+ position: relative;
 }
- .qty-input .qty-count:before, .qty-input .qty-count:after {
-	 content: "";
-	 height: 2px;
-	 width: 10px;
-	 position: absolute;
-	 display: block;
-	 background: #000;
-	 top: 0;
-	 bottom: 0;
-	 left: 0;
-	 right: 0;
-	 margin: auto;
+.qty-input .qty-count:before, .qty-input .qty-count:after {
+ content: "";
+ height: 2px;
+ width: 10px;
+ position: absolute;
+ display: block;
+ background: #000;
+ top: 0;
+ bottom: 0;
+ left: 0;
+ right: 0;
+ margin: auto;
 }
- .qty-input .qty-count--minus {
-	 border-right: 1px solid #e2e2e2;
+.qty-input .qty-count--minus {
+ border-right: 1px solid #e2e2e2;
 }
- .qty-input .qty-count--add {
-	 border-left: 1px solid #e2e2e2;
+.qty-input .qty-count--add {
+ border-left: 1px solid #e2e2e2;
 }
- .qty-input .qty-count--add:after {
-	 transform: rotate(90deg);
+.qty-input .qty-count--add:after {
+ transform: rotate(90deg);
 }
- .qty-input .qty-count:disabled {
-	 color: #ccc;
-	 background: #f2f2f2;
-	 cursor: not-allowed;
-	 border-color: transparent;
+.qty-input .qty-count:disabled {
+ color: #ccc;
+ background: #f2f2f2;
+ cursor: not-allowed;
+ border-color: transparent;
 }
- .qty-input .qty-count:disabled:before, .qty-input .qty-count:disabled:after {
-	 background: #ccc;
+.qty-input .qty-count:disabled:before, .qty-input .qty-count:disabled:after {
+ background: #ccc;
 }
 
- .qty-input {
-	 border-radius: 4px;
-	 box-shadow: 0 1em 2em -0.9em rgba(0, 0, 0, 0.7);
-	 transform: scale(1);
-   position: absolute;
-    right: 6px;
-    top: 50%;
-  transform: translateY(-50%);
+.qty-input {
+ border-radius: 4px;
+ box-shadow: 0 1em 2em -0.9em rgba(0, 0, 0, 0.7);
+ transform: scale(1);
+ position: absolute;
+  right: 6px;
+  top: 50%;
+transform: translateY(-50%);
 
 }
 #menu .badge.copy {
-    position: absolute;
-    top: 70%;
-    right: 0;
+  position: absolute;
+  top: 70%;
+  right: 0;
 }
-      </style>
+    </style>
+      
 
 </head>
 <body>
@@ -478,14 +478,19 @@
                   <li class="nav-item">
                     <a class="nav-link" data-toggle="pill" href="#Veg" data-filter="FINAL-TOUCHES">Our Special Dishes</a>
                 </li>
-                  <li class="nav-item">
-                      <a class="nav-link" data-toggle="pill" href="#finaltouches" data-filter="others">Our Other Delicacies</a>
-                      
-                  </li>
+                  
                   <li class="nav-item">
                     <a class="nav-link" data-toggle="pill" href="#finaltouches" data-filter="catch-of-the-day">Catch Of The Day</a>
                    
                 </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" href="#drinks1" data-filter="drinks1">Drinks</a>
+                  
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#finaltouches" data-filter="others">Our Other Delicacies</a>
+                
+            </li>
               </ul>
               
 
@@ -881,45 +886,7 @@
                                     </li>
                               </ul>
                               
-                              <ul class="others list-group">
-                                <h6>Our Other Delicacies</h6>
-                                  <li class="list-group-item">
-                                      <h4 class="list-group-item-heading">POULTRY CHICKEN JOH<span class="badge pull-right">$33.95</span></h4>
-                                      <p class="list-group-item-text">Marinated breast of chicken, dusted in ten spiced flour, almond flour &amp; sesame seeds, arugula, stir-fry vegetables, crispy mushrooms Brian, and soy Armagnac sauce.</p>
-                                    </li>
-                                    <li class="list-group-item">
-                                      <h4 class="list-group-item-heading">CHICKEN GERT<span class="badge pull-right">$34.95</span></h4>
-                                      <p class="list-group-item-text">Pan-roasted breast of chicken stuffed with roasted garlic rosemary butter, wild mushroom risotto, broccoli rabe and tomato emulsion.</p>
-                                    </li>
-                                    <li class="list-group-item">
-                                      <h4 class="list-group-item-heading">DUCK CONFIT<span class="badge pull-right">$40.95</span></h4>
-                                      <p class="list-group-item-text">Caramelized fingerling potatoes, wild mushrooms, arugula, green peppercorn sauce.</p>
-                                    </li>
-                                    <li class="list-group-item">
-                                      <h4 class="list-group-item-heading">BEEF 10OZ CHATEAUBRIAND TIPS<span class="badge pull-right">$37.00</span></h4>
-                                      <p class="list-group-item-text">The same beef as our Chateaubriand, charcoal-grilled</p>
-                                    </li>
-                                    <li class="list-group-item">
-                                      <h4 class="list-group-item-heading">DRY-AGED SHORT RIBS<span class="badge pull-right">$38.95</span></h4>
-                                      <p class="list-group-item-text">Bacon, Brussels sprouts, red bliss potatoes, Muscadel barbecue sauce.</p>
-                                    </li>
-                                    <li class="list-group-item">
-                                      <h4 class="list-group-item-heading">DRY-AGED MEATBALLS<span class="badge pull-right">$39.95</span></h4>
-                                      <p class="list-group-item-text">Périgord black truffles, wild mushrooms, rosemary pappardelle, madeira sauce.</p>
-                                    </li>
-                                    <li class="list-group-item">
-                                      <h4 class="list-group-item-heading">LAMB-RACK OF LAMB (4 BONES)<span class="badge pull-right"></span>$59.95</h4>
-                                      <p class="list-group-item-text">Pinot Noir reduction, mint jelly upon request.</p>
-                                    </li>
-                                    <li class="list-group-item">
-                                      <h4 class="list-group-item-heading">VEGETARIAN-GOAT CHEESE &amp; PORTOBELLO RAVIOLI<span class="badge pull-right">$35.95</span></h4>
-                                      <p class="list-group-item-text">Catalan spinach, oven dried tomato, golden raisins, pine nuts, Spanish sauce.</p>
-                                    </li>
-                                    <li class="list-group-item">
-                                      <h4 class="list-group-item-heading">SWEET PEA GNOCCHI<span class="badge pull-right">$36.95</span></h4>
-                                      <p class="list-group-item-text">Baby artichokes, spring beans, pea tendrils</p>
-                                    </li>
-                                 </ul>
+                         
                                  
                                  <ul class="catch-of-the-day list-group">
                                   <h6>Catch Of The Day</h6>
@@ -968,14 +935,192 @@
                                       <p class="list-group-item-text">Gulf black grouper, wild mushrooms, Key West pink shrimp, olives, tomato mustard cream.</p>
                                     </li>
                                  </ul>
-
+                                 <ul class="list-group drinks1">
+                                  <h6>Tea </h6>
+                                  <li class="list-group-item">
+                                    <h4 class="list-group-item-heading">Dark Tea<span class="badge pull-right">Market price</span></h4>
+                                    <p class="list-group-item-text"></p>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <h4 class="list-group-item-heading">Black Tea<span class="badge pull-right">Market price</span></h4>
+                                    <p class="list-group-item-text"></p>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <h4 class="list-group-item-heading">OOlong Tea<span class="badge pull-right">Market price</span></h4>
+                                    <p class="list-group-item-text"></p>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <h4 class="list-group-item-heading">Green Tea<span class="badge pull-right">Market price</span></h4>
+                                    <p class="list-group-item-text"></p>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <h4 class="list-group-item-heading">White Tea<span class="badge pull-right">Market price</span></h4>
+                                    <p class="list-group-item-text"></p>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <h4 class="list-group-item-heading">Puer Tea<span class="badge pull-right">Market price</span></h4>
+                                    <p class="list-group-item-text"></p>
+                                  </li>
+                                  <h6>Coffee for the Respite</h6>
+                                  <li class="list-group-item">
+                                    <h4 class="list-group-item-heading">Cappuccino<span class="badge pull-right">Market price</span></h4>
+                                    <p class="list-group-item-text"></p>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <h4 class="list-group-item-heading">Americano <span class="badge pull-right">Market price</span></h4>
+                                    <p class="list-group-item-text"></p>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <h4 class="list-group-item-heading">	Espresso<span class="badge pull-right">Market price</span></h4>
+                                    <p class="list-group-item-text"></p>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <h4 class="list-group-item-heading">Mcchiato<span class="badge pull-right">Market price</span></h4>
+                                    <p class="list-group-item-text"></p>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <h4 class="list-group-item-heading">	Mocha <span class="badge pull-right">Market price</span></h4>
+                                    <p class="list-group-item-text"></p>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <h4 class="list-group-item-heading">Latte<span class="badge pull-right">Market price</span></h4>
+                                    <p class="list-group-item-text"></p>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <h4 class="list-group-item-heading">Listretto<span class="badge pull-right">Market price</span></h4>
+                                    <p class="list-group-item-text"></p>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <h4 class="list-group-item-heading">Piccolo<span class="badge pull-right">Market price</span></h4>
+                                    <p class="list-group-item-text"></p>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <h4 class="list-group-item-heading">Affogato<span class="badge pull-right">Market price</span></h4>
+                                    <p class="list-group-item-text"></p>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <h4 class="list-group-item-heading">Cold Coffee<span class="badge pull-right">Market price</span></h4>
+                                    <p class="list-group-item-text"></p>
+                                  </li>
+                                  <h6>Chocolate for the Sweet Tooth</h6>
+                                  <li class="list-group-item">
+                                    <h4 class="list-group-item-heading">Hot Choco<span class="badge pull-right">Market price</span></h4>
+                                    <p class="list-group-item-text"></p>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <h4 class="list-group-item-heading">Iced Choco<span class="badge pull-right">Market price</span></h4>
+                                    <p class="list-group-item-text"></p>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <h4 class="list-group-item-heading">Chocolate shake<span class="badge pull-right">Market price</span></h4>
+                                    <p class="list-group-item-text"></p>
+                                  </li>
+                                  <h6>Juices to Rejuvenate</h6>
+                                  <li class="list-group-item">
+                                    <h4 class="list-group-item-heading">Real Fruit Juice (Seasonal fruits)<span class="badge pull-right">Market price</span></h4>
+                                    <p class="list-group-item-text"></p>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <h4 class="list-group-item-heading">Artificial fruit juice<span class="badge pull-right">Market price</span></h4>
+                                    <p class="list-group-item-text"></p>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <h4 class="list-group-item-heading">Frothies<span class="badge pull-right">Market price</span></h4>
+                                    <p class="list-group-item-text"></p>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <h4 class="list-group-item-heading">Flavoured Drinks<span class="badge pull-right">Market price</span></h4>
+                                    <p class="list-group-item-text"></p>
+                                  </li>
+                                  <h6>Beer for the Bold</h6>
+                                  <li class="list-group-item">
+                                    <h4 class="list-group-item-heading">Fruit Beer<span class="badge pull-right">Market price</span></h4>
+                                    <p class="list-group-item-text"></p>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <h4 class="list-group-item-heading">Wheat Beer<span class="badge pull-right">Market price</span></h4>
+                                    <p class="list-group-item-text"></p>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <h4 class="list-group-item-heading">Ale<span class="badge pull-right">Market price</span></h4>
+                                    <p class="list-group-item-text"></p>
+                                  </li>
+                                  <h6>Wine for the Thinkers</h6>
+                                  <li class="list-group-item">
+                                    <h4 class="list-group-item-heading">Red Wine<span class="badge pull-right">Market price</span></h4>
+                                    <p class="list-group-item-text"></p>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <h4 class="list-group-item-heading">White Wine<span class="badge pull-right">Market price</span></h4>
+                                    <p class="list-group-item-text"></p>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <h4 class="list-group-item-heading">Sparkling Wine<span class="badge pull-right">Market price</span></h4>
+                                    <p class="list-group-item-text"></p>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <h4 class="list-group-item-heading">Fruit Wine<span class="badge pull-right">Market price</span></h4>
+                                    <p class="list-group-item-text"></p>
+                                  </li>
+                                  <h6>Spirits Anytime</h6>
+                                  <li class="list-group-item">
+                                    <h4 class="list-group-item-heading">Gin<span class="badge pull-right">Market price</span></h4>
+                                    <p class="list-group-item-text"></p>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <h4 class="list-group-item-heading">Tequila<span class="badge pull-right">Market price</span></h4>
+                                    <p class="list-group-item-text"></p>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <h4 class="list-group-item-heading">Vodka<span class="badge pull-right">Market price</span></h4>
+                                    <p class="list-group-item-text"></p>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <h4 class="list-group-item-heading">Whiskey<span class="badge pull-right">Market price</span></h4>
+                                    <p class="list-group-item-text"></p>
+                                  </li>
+                                  </ul>
+                                  <ul class="others list-group">
+                                    <h6>Our Other Delicacies</h6>
+                                      <li class="list-group-item">
+                                          <h4 class="list-group-item-heading">POULTRY CHICKEN JOH<span class="badge pull-right">$33.95</span></h4>
+                                          <p class="list-group-item-text">Marinated breast of chicken, dusted in ten spiced flour, almond flour &amp; sesame seeds, arugula, stir-fry vegetables, crispy mushrooms Brian, and soy Armagnac sauce.</p>
+                                        </li>
+                                        <li class="list-group-item">
+                                          <h4 class="list-group-item-heading">CHICKEN GERT<span class="badge pull-right">$34.95</span></h4>
+                                          <p class="list-group-item-text">Pan-roasted breast of chicken stuffed with roasted garlic rosemary butter, wild mushroom risotto, broccoli rabe and tomato emulsion.</p>
+                                        </li>
+                                        <li class="list-group-item">
+                                          <h4 class="list-group-item-heading">DUCK CONFIT<span class="badge pull-right">$40.95</span></h4>
+                                          <p class="list-group-item-text">Caramelized fingerling potatoes, wild mushrooms, arugula, green peppercorn sauce.</p>
+                                        </li>
+                                        <li class="list-group-item">
+                                          <h4 class="list-group-item-heading">BEEF 10OZ CHATEAUBRIAND TIPS<span class="badge pull-right">$37.00</span></h4>
+                                          <p class="list-group-item-text">The same beef as our Chateaubriand, charcoal-grilled</p>
+                                        </li>
+                                        <li class="list-group-item">
+                                          <h4 class="list-group-item-heading">DRY-AGED SHORT RIBS<span class="badge pull-right">$38.95</span></h4>
+                                          <p class="list-group-item-text">Bacon, Brussels sprouts, red bliss potatoes, Muscadel barbecue sauce.</p>
+                                        </li>
+                                        <li class="list-group-item">
+                                          <h4 class="list-group-item-heading">DRY-AGED MEATBALLS<span class="badge pull-right">$39.95</span></h4>
+                                          <p class="list-group-item-text">Périgord black truffles, wild mushrooms, rosemary pappardelle, madeira sauce.</p>
+                                        </li>
+                                        <li class="list-group-item">
+                                          <h4 class="list-group-item-heading">LAMB-RACK OF LAMB (4 BONES)<span class="badge pull-right"></span>$59.95</h4>
+                                          <p class="list-group-item-text">Pinot Noir reduction, mint jelly upon request.</p>
+                                        </li>
+                                        <li class="list-group-item">
+                                          <h4 class="list-group-item-heading">VEGETARIAN-GOAT CHEESE &amp; PORTOBELLO RAVIOLI<span class="badge pull-right">$35.95</span></h4>
+                                          <p class="list-group-item-text">Catalan spinach, oven dried tomato, golden raisins, pine nuts, Spanish sauce.</p>
+                                        </li>
+                                        <li class="list-group-item">
+                                          <h4 class="list-group-item-heading">SWEET PEA GNOCCHI<span class="badge pull-right">$36.95</span></h4>
+                                          <p class="list-group-item-text">Baby artichokes, spring beans, pea tendrils</p>
+                                        </li>
+                                     </ul>
                           </div>
-                          <div class="col-sm-5">
-                              <div class="right-cover">
-                                
-                                  <img src="../images/menu/Warm Discussions Cafe_Beef Burger_2880x2304.jpg" class="menu-img img-fluid" alt="breakfast-img">
-                              </div>
-                          </div>
+                          
                       </div>      
                   </div>
                      
