@@ -9102,10 +9102,16 @@ ul.tabs li.current{
 	background-color: #000;
 	font-size: 14px;
 	color: #fff;
-	top: 5px;
-	padding: 6px;
+
+	padding: 6px 15px 6px 6px;
 	margin: 0 3px;
-	float: right !important;
+	top: 10%;
+    right: 115px;
+	position: absolute;
+	font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
 }
 
 
@@ -9148,6 +9154,50 @@ ul.tabs li.current{
 	.pricing-carte .cuisine-name, .pricing-carte .cuisine-price {
 		font-family: "Old Standard TT", serif;
 		font-size: 21px;
+	}
+	.coffee-item{
+		min-height: 140px !important	;
+	}
+	.coffee-item .badge{
+		border-radius: 0;
+		background-color: #000;
+		font-size: 14px;
+		color: #fff;
+		padding: 6px 15px 6px 6px;
+		margin: 0 3px;
+		top: 27% !important;
+		right: 0;
+		position: absolute;
+	}
+	.coffee-item .badge1{
+		border-radius: 0;
+    background-color: #000;
+    font-size: 14px;
+    color: #fff;
+    padding: 6px 15px 6px 6px;
+    margin: 0 3px;
+    top: 5% !important;
+    right: 0 !important;
+    position: absolute;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+	}
+	.coffee-item .badge.copy{
+		position: absolute;
+    top: 71% !important;
+    right: 0;
+}
+	
+	.coffee-item .qty-input{
+		border-radius: 4px;
+		box-shadow: 0 1em 2em -0.9em rgb(0 0 0 / 70%);
+		transform: scale(1);
+		position: absolute;
+		right: 6px;
+		top: 58% !important;
+		transform: translateY(-50%);
 	}
 }
 
