@@ -256,19 +256,19 @@ input.radio:focus ~ label:before {
                                     <div class="cart-bot-last mt-2">
                                         <h2>Select an option</h2>
                                     </div>
-                                    <div class="radiocheck">
-                                        <div >
-                                            <input type="radio" name="radio" id="radio1" class="radio" checked/>
+                                    <div class="radiocheck" id="radioDiv">
+                                        <div id="delivery">
+                                            <input type="radio" name="radio" id="radio1" class="radio" value="1"/>
                                             <label for="radio1">Delivery</label>
                                             </div>
                                             
-                                            <div>
-                                            <input type="radio" name="radio" id="radio2" class="radio"/>
+                                            <div id="take_away">
+                                            <input type="radio" name="radio" id="radio2" class="radio" value="2"/>
                                             <label for="radio2">Take away</label>
                                             </div>
                                             
-                                            <div>	
-                                            <input type="radio" name="radio" id="radio3" class="radio"/>
+                                            <div id="pick_up">	
+                                            <input type="radio" name="radio" id="radio3" class="radio" value="3"/>
                                             <label for="radio3">Pick up</label>
                                             </div>
                                             
@@ -287,7 +287,7 @@ input.radio:focus ~ label:before {
                                         </div>
                                       
                                         <div class="totals-item">
-                                            <label>Delivery</label>
+                                            <label id="delivery_option">Delivery</label>
                                             <div class="totals-value" id="cart-shipping">15.00</div>
                                         </div>
                                         <div class="totals-item totals-item-total bg-dark text-light">
@@ -342,7 +342,21 @@ input.radio:focus ~ label:before {
     <script src="../scripts/plugins.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
     <script src="../scripts/main.js"></script>
+    <script>
+
+$(document).ready(function() {
     
+    var selectedVal = "";
+var selected = $("#radioDiv input[type='radio']:checked");
+if (selected.length > 0) {
+    selectedVal = selected.val();
+    alert (selectedVal);
+}
+
+
+        });
+       
+ </script>
 
 </body>
 </html>
